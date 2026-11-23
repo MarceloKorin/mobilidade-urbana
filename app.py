@@ -7,11 +7,10 @@ app = Flask(__name__, static_folder="public", static_url_path="")
 grafo = GrafoViario()
 
 grafo.adicionar_via("CRU-A", "CRU-B", 5, 600)
-grafo.adicionar_via("CRU-B", "CRU-C", 6, 450)
+grafo.adicionar_via("CRU-B", "CRU-C", 4, 450)
 grafo.adicionar_via("CRU-B", "CRU-D", 2.5, 300)
-grafo.adicionar_via("CRU-D", "CRU-C", 2, 400)
+grafo.adicionar_via("CRU-D", "CRU-C", 3, 400)
 grafo.adicionar_via("CRU-C", "CRU-A", 6, 700)
-
 
 @app.errorhandler(ValueError)
 @app.errorhandler(KeyError)
